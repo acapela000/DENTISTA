@@ -1,12 +1,13 @@
 "use client";
 import Link from "next/link";
 import Flags from "country-flag-icons/react/3x2";
+// @ts-ignore
 import {
   Dropdown,
   DropdownTrigger,
   DropdownMenu,
   DropdownItem,
-  Button,
+  button,
 } from "@nextui-org/react";
 
 export default function NavBar() {
@@ -46,6 +47,7 @@ export default function NavBar() {
           <Link href="/">Contact</Link>
         </span>
         <span className="relative -top-[120px] -right-[1025px]">
+          {/*
           <Dropdown>
             <Dropdown.Trigger>
               <Flags.US width={40} height={40} className="relative" />
@@ -53,7 +55,7 @@ export default function NavBar() {
             {/* <Dropdown.Content>
               <Dropdown.Link href="#">English</Dropdown.Link>
               <Dropdown.Link href="#">Spanish</Dropdown.Link>
-            </Dropdown.Content> */}
+            </Dropdown.Content> 
             <DropdownMenu>
               <DropdownItem>
                 <Flags.US width={40} height={40} className="relative" />
@@ -62,7 +64,8 @@ export default function NavBar() {
                 <Flags.ES width={40} height={40} className="relative" />
               </DropdownItem>
             </DropdownMenu>
-          </Dropdown>
+          </Dropdown> 
+          */}
         </span>
       </div>
     </div>
