@@ -7,7 +7,6 @@ import {
   DropdownTrigger,
   DropdownMenu,
   DropdownItem,
-  button,
 } from "@nextui-org/react";
 
 export default function NavBar() {
@@ -47,15 +46,10 @@ export default function NavBar() {
           <Link href="/">Contact</Link>
         </span>
         <span className="relative -top-[120px] -right-[1025px]">
-          {/*
-          <Dropdown>
+          {/* <Dropdown>
             <Dropdown.Trigger>
               <Flags.US width={40} height={40} className="relative" />
             </Dropdown.Trigger>
-            {/* <Dropdown.Content>
-              <Dropdown.Link href="#">English</Dropdown.Link>
-              <Dropdown.Link href="#">Spanish</Dropdown.Link>
-            </Dropdown.Content> 
             <DropdownMenu>
               <DropdownItem>
                 <Flags.US width={40} height={40} className="relative" />
@@ -64,8 +58,9 @@ export default function NavBar() {
                 <Flags.ES width={40} height={40} className="relative" />
               </DropdownItem>
             </DropdownMenu>
-          </Dropdown> 
-          */}
+          </Dropdown> */}
+
+          <Flags.ES width={40} height={40} className="relative" />
         </span>
       </div>
     </div>
